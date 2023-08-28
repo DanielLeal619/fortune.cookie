@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;1,400&family=Meera+Inimai&family=Raleway:wght@700&display=swap');
+
+
+.container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2.5em;
+    background-position: center center;
+    background-size: cover;
+}
+
+.container__title {    
+    font-family: 'Rubik', sans-serif;
+    font-weight: 800;
+    text-shadow: 0.06em 0.06em #5555;
+    padding: 0.2em 0.5em;
+    border-radius: 0.5em;
+    background: linear-gradient( #1497BE, #1C2AEC);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    animation: text 3s linear infinite;
+}
+
+@keyframes text {
+    0% {
+        filter: hue-rotate(0deg);
+    }
+    100% {
+        filter: hue-rotate(360deg);
+    }
+}
+
+.container__phrase {
+    font-family: 'IM Fell DW Pica',400 Italic;
+    font-style: italic;
+    width: 100%;
+    max-width: 25em;
+    font-size: 1.2rem;
+    padding: 0.8em 0.8em;   
+    line-height: 1.4; 
+    border-radius: 0.8em;
+    background-color: rgba(238, 212, 173, 0.937);
+    text-shadow: 0.09em 0.09em #3333;
+}
+
+.container__btn {
+    font-family: 'Hind Madurai', sans-serif;
+    font-size: 1.2rem;
+    padding: 0.5em 0.8em;
+    border-radius: 0.7em; 
+    background-color: rgba(247, 241, 51, 0.914);
+    color: green;
+    cursor: pointer;   
+    transition: 0.5s;
+}
+
+.container__btn:hover {
+    background-color: green;
+    color:  rgba(247, 241, 51, 0.914);
+}
+
